@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Home from "./components/Home";
+import Architecture from "./components/Architecture";
+import Construction from "./components/Construction";
+import Interior from "./components/Interior";
+import BidProject from "./components/BidProject";
+import RentofProperties from "./components/RentofProperties";
+import Signin from "./components/Signin";
+import ShopOnline from "./components/ShopOnline";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  return(
+    <>
+<BrowserRouter>
+
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/architecture" element={<Architecture />} />
+<Route path="/construction" element={<Construction />} />
+<Route path="/interior" element={<Interior />} />
+<Route path="/bidproject" element={<BidProject />} />
+<Route path="/rentproprties" element={<RentofProperties />}/>
+<Route path="/signin" element={<Signin />} />
+<Route path="/shoponline" element={<ShopOnline />} />
+</Routes>
+</BrowserRouter>
+</>
   );
-}
+};
+
 
 export default App;
