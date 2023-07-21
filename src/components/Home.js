@@ -3,15 +3,12 @@ import Hero from "../componenth/Hero";
 import Navbar from "./Navbar";
 import Sidebar from '../componenth/Sidebar';
 import Calculator from '../componenth/Calculator';
-import Demand from '../componenth/Demand';
 import Modal from '../componenth/Modal';
 import Quick from '../componenth/Quick';
-import Professional from '../componenth/Professional';
-import Book from "../componenth/Book";
 import House from '../componenth/House';
-import Success from '../componenth/Success';
 import Talk from '../componenth/Talk';
 import Footer from '../componenth/Footer';
+// import Emical from '../componenth/Emical';
 
 
 const Home = () => {
@@ -27,18 +24,15 @@ const Home = () => {
           <div className='col-lg-8 hero-box'>
             <Modal/>
             <Hero/>
-            <Demand />
           </div>
           <div className='col-lg-2'>
-            <Calculator />
+            <Calculator /><br />
+            {/* <Emical /> */}
           </div>
        </div>
        <div className='row'>
            <Quick />
-           <Professional />
-           <Book />
            <House />
-           <Success />
            <Talk />
            <Footer />
        </div>

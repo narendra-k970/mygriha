@@ -1,18 +1,19 @@
 import React from 'react'
+import logo from "../img/Group-1.png"
 import { NavLink } from 'react-router-dom'
-import { FaHome } from 'react-icons/fa';
+// import { FaHome } from 'react-icons/fa';
 import "../index.css";
 
-
 const Navbar = () => {
-  return (
+
+return (  
     <>
    <section className='nav-bg'>
     <div className='container-fluid'>
        <div className='row'>
        <nav className="navbar navbar-expand-lg">
   <div className="container-fluid">
-    <NavLink className="navbar-brand" to="/">< FaHome className='nav-icon'/></NavLink><b className='title'>Griha</b>
+    <NavLink className="navbar-brand" to="/"><img src={logo} alt='logo' className='logo-s'/></NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +40,7 @@ const Navbar = () => {
         <li className="nav-item me-4">
           <NavLink className="nav-link" to="/signin">Sign In</NavLink>
         </li>
-        <button className='btn-main'>+ Book Designer</button>
+        <button className='btn-main'>+ Book GrahRahi</button>
       </ul>
     </div>
   </div>

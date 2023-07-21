@@ -39,6 +39,8 @@ const Sidebar = () => {
             <NavLink className="nav-link" to="#"><img src={icon3} alt='' className='s-icon'/>
             <span className='title2'>Interior</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon4} alt='' className='s-icon'/>
+            <span className='title2'>Buy/Sell/Rent</span></NavLink>
+            <NavLink className="nav-link" to="#"><img src={icon4} alt='' className='s-icon'/>
             <span className='title2'>Calculator</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon5} alt='' className='s-icon'/>
             <span className='title2'>Bid Project</span></NavLink>
@@ -48,6 +50,10 @@ const Sidebar = () => {
             <span className='title2'>Furniture & Decor</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon8} alt='' className='s-icon'/>
             <span className='title2'>Vastu Consultant</span></NavLink>
+            <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
+            <span className='title2'>Courses</span></NavLink>
+            <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
+            <span className='title2'>Design Idea</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
             <span className='title2'>Design Library</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon10} alt='' className='s-icon'/>

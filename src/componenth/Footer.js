@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../img/Group 1.png"
+import logo from "../img/Group-1.png"
 import { NavLink } from 'react-router-dom'
 import { BsFillSquareFill } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -31,7 +31,7 @@ const Footer = () => {
                   </form>
 
                  </div>
-                 <div className='col-lg-2'>
+                 <div className='col-lg-2 f-abt'>
                  <h4 className='f-head'>About Us</h4>
                  <li className='f-list'><BsFillSquareFill className='f-icon'/><NavLink to="#" className="f-link">Team</NavLink></li>
                  <li className='f-list'><BsFillSquareFill className='f-icon'/><NavLink to="#" className="f-link">Blogs</NavLink></li>
@@ -66,33 +66,31 @@ const Footer = () => {
                  </div>
              </div>
              <hr className='f-hr'/>
-             <div className='row ft-row'>
+             <div className='row ft-row g-2'>
                 <div className='col-lg-1'>
 
                 </div>
                 <div className='col-lg-2'>
                 <h4 className='f-head'>Contact Us </h4>
                 </div>
-                <div className='col-lg-2'>
+                <div className='col-lg-2 fot-p'>
                 <img src={icon1} alt='icon' />+91 987 654 3210
                 </div>
-                <div className='col-lg-2'>
+                <div className='col-lg-2 fot-p'>
                 <img src={icon2} alt='icon' />deaign@gmail.com
                 </div>
-                <div className='col-lg-4'>
+                <div className='col-lg-5 fot-p'>
                 <img src={icon3} alt='icon' />G-39, 3rd Floor, Office No.-301, sec-63 Noida, Up.
                 </div>
-                <div className='col-lg-1'>
-
-                 </div>
+                
               </div>
               <div className='row mt-3'>
                  <div className='col-lg-6'>
-                  <p>©copyright My Griha 2023 Design & Developed by DTPL.</p>
+                  <p className='fot-p'>©copyright My Griha 2023 Design & Developed by DTPL.</p>
                  </div>
                  <div className='col-lg-3'>
                  </div>
-                 <div className='col-lg-3 ft-pay'>
+                 <div className='col-lg-3 fo-img'>
                     <img src={img} alt='img'/>
                  </div>
               </div>
