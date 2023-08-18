@@ -118,6 +118,9 @@ const Hero = () => {
         </div>
     </section>
 
+    <div class="sticky-button">
+    <button>Shop Online</button>
+  </div>
     </>
   )
 }

@@ -74,13 +74,13 @@ const Footer = () => {
                 <h4 className='f-head'>Contact Us </h4>
                 </div>
                 <div className='col-lg-2 fot-p'>
-                <img src={icon1} alt='icon' />+91 987 654 3210
+                <img src={icon1} alt='icon' className='ft-icon'/>+91 987 654 3210
                 </div>
                 <div className='col-lg-2 fot-p'>
-                <img src={icon2} alt='icon' />deaign@gmail.com
+                <img src={icon2} alt='icon' className='ft-icon'/>deaign@gmail.com
                 </div>
                 <div className='col-lg-5 fot-p'>
-                <img src={icon3} alt='icon' />G-39, 3rd Floor, Office No.-301, sec-63 Noida, Up.
+                <img src={icon3} alt='icon' className='ft-icon'/>G-39, 3rd Floor, Office No.-301, sec-63 Noida, Up.
                 </div>
                 
               </div>

@@ -1,6 +1,4 @@
 import React from 'react'
-// import { FaFortAwesome } from "react-icons/fa";
-// import { FaChevronDown} from "react-icons/fa";
 import icon1 from "../icon/Architecture.png";
 import icon2 from "../icon/Construction.png";
 import icon3 from "../icon/Interior-1.png"
@@ -20,6 +18,9 @@ import icon16 from "../icon/Deal.png"
 import icon17 from "../icon/Outsourcing.png"
 import icon18 from "../icon/About-us.png"
 import icon19 from "../icon/Contact-Us.png"
+import icon20 from "../icon/Design-Cour.png"
+import icon21 from "../icon/Design-Lib.png"
+import icon22 from "../icon/dicon3.png"
 import "../index.css";
 import { NavLink } from 'react-router-dom';
 
@@ -38,7 +39,7 @@ const Sidebar = () => {
             <span className='title2'>Construction</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon3} alt='' className='s-icon'/>
             <span className='title2'>Interior</span></NavLink>
-            <NavLink className="nav-link" to="#"><img src={icon4} alt='' className='s-icon'/>
+            <NavLink className="nav-link" to="#"><img src={icon22} alt='' className='s-icon'/>
             <span className='title2'>Buy/Sell/Rent</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon4} alt='' className='s-icon'/>
             <span className='title2'>Calculator</span></NavLink>
@@ -50,11 +51,11 @@ const Sidebar = () => {
             <span className='title2'>Furniture & Decor</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon8} alt='' className='s-icon'/>
             <span className='title2'>Vastu Consultant</span></NavLink>
-            <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
+            <NavLink className="nav-link" to="#"><img src={icon20} alt='' className='s-icon'/>
             <span className='title2'>Courses</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
             <span className='title2'>Design Idea</span></NavLink>
-            <NavLink className="nav-link" to="#"><img src={icon9} alt='' className='s-icon'/>
+            <NavLink className="nav-link" to="#"><img src={icon21} alt='' className='s-icon'/>
             <span className='title2'>Design Library</span></NavLink>
             <NavLink className="nav-link" to="#"><img src={icon10} alt='' className='s-icon'/>
             <span className='title2'>Forem/Architect</span></NavLink>

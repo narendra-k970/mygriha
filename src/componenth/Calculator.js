@@ -3,22 +3,44 @@ import "../index.css";
 import { useState } from 'react';
 import Emical from './Emical';
 
+
 const Calculator = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+  const [showModal3, setShowModal3] = useState(false);
 
-   const [showModal, setShowModal] = useState(false);
-   const [showModal1, setShowModal1] = useState(false);
-   const [showModal2, setShowModal2] = useState(false);
-   const [showModal3, setShowModal3] = useState(false);
+  const handleButtonHover = () => {
+    setShowModal(true);
+  };
 
-   
-   const MyModal = () => {
-    return(
-      <>
-      <Emical />
-      </>
-    )
-   }
-   
+  const handleButtonLeave = () => {
+    setShowModal(false);
+  };
+
+  const handleButtonHover1 = () => {
+    setShowModal1(true);
+  };
+
+  const handleButtonLeave1 = () => {
+    setShowModal1(false);
+  };
+
+  const handleButtonHover2 = () => {
+    setShowModal2(true);
+  };
+
+  const handleButtonLeave2 = () => {
+    setShowModal2(false);
+  };
+  const handleButtonHover3 = () => {
+    setShowModal3(true);
+  };
+
+  const handleButtonLeave3 = () => {
+    setShowModal3(false);
+  };
+
 
   return (
     <>
@@ -31,10 +53,22 @@ const Calculator = () => {
         Calculator
       </button>
         <ul className="dropdown-menu dd-menu" aria-labelledby="dropdownMenuButton">
-        <li><button onClick={() => setShowModal(true)} className="dropdown-item dp-item" to="#">Building</button>{showModal && <MyModal />}</li><hr className='hr1'/>
-        <li><button onClick={() => setShowModal1(true)} className="dropdown-item dp-item" to="#">Construction</button>{showModal1 && <MyModal />}</li><hr className='hr1'/>
-        <li><button onClick={() => setShowModal2(true)} className="dropdown-item dp-item" to="#" >EMI</button>{showModal2 && <MyModal />}</li><hr className='hr1'/>
-        <li><button onClick={() => setShowModal3(true)} className="dropdown-item dp-item" to="#">Interior</button>{showModal3 && <MyModal />}</li>
+        <div className="button-container" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonLeave}>
+        <button className='mod-btn1'>Building</button>
+        {showModal && <Emical />}
+        </div>
+        <div className="button-container" onMouseEnter={handleButtonHover1} onMouseLeave={handleButtonLeave1}>
+        <button className='mod-btn1'>Construction</button>
+        {showModal1 && <Emical />}
+        </div>
+        <div className="button-container" onMouseEnter={handleButtonHover2} onMouseLeave={handleButtonLeave2}>
+        <button className='mod-btn1'>Emi</button>
+        {showModal2 && <Emical />}
+        </div>
+        <div className="button-container" onMouseEnter={handleButtonHover3} onMouseLeave={handleButtonLeave3}>
+        <button className='mod-btn1'>Interior</button>
+        {showModal3 && <Emical />}
+        </div>
         </ul>
        </div>
        </div>

@@ -18,12 +18,13 @@ code {
   border-bottom: 3px solid #CC3333;
 }
 
+
 .btn-main {
   background-color: #CC3333;
   color: #fff;
   border: #CC3333;
   border-radius: 5px;
-  padding: 0px 30px;
+  padding: 0px 10px;
 }
 
 .btn-main1 {
@@ -78,6 +79,10 @@ code {
   padding-right: 5px;
 }
 
+.mob-m {
+  margin-top: 15px !important;
+  padding: 40px !important;
+}
 
 .box {
   height: 130px;
@@ -118,7 +123,6 @@ code {
 }
 
 /* How it work */
-
 .btnc {
   display: flex;
   justify-content: center;
@@ -184,7 +188,6 @@ code {
 
 .cal-btn {
   margin-top: 40px;
-  /* padding-left: 40px !important; */
   padding-right: 40px !important;
 }
 
@@ -296,6 +299,45 @@ code {
 
 .mod-row {
   text-align: center !important;
+}
+
+.modal {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.modal.active {
+  background-color: #000;
+}
+
+.modal-content {
+  padding: 0px;
+}
+
+.mod-btn {
+  padding: 5px 10px;
+  background-color: #CC3333;
+  color: #fff;
+  border: 1px solid #CC3333;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.mod-btn1 {
+  padding: 5px 10px;
+  width: 150px;
+  background-color: #CC3333;
+  color: #fff;
+  border: 1px solid #CC3333;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  align-items: center;
 }
 
 /* Quick */
@@ -520,7 +562,6 @@ code {
 
 /* calculator */
 .cale {
-  /* padding: 10px; */
   padding-left: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -531,29 +572,6 @@ code {
   color: #fff;
   margin-top: 10px;
   border: 1px solid #CC3333;
-}
-
-/* team */
-.team-c {
-  width: 100% !important;
-  position: relative;
-}
-
-.card-bd {
-  position: relative;
-  margin-top: -40px;
-  background-color: #CC3333;
-  color: #fff !important;
-  width: 100%;
-}
-
-.team-sec {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
-.team-img {
-  height: 220px;
 }
 
 /* swipper */
@@ -711,6 +729,10 @@ code {
   font-size: 16px;
 }
 
+.ft-icon {
+  margin-right: 5px;
+}
+
 .talk-sec {
   margin-top: 40px !important;
   margin-bottom: 40px !important;
@@ -815,6 +837,7 @@ code {
 
 .flag {
   margin-top: -40px;
+  margin-left: 10px;
 }
 
 .f-abt {
@@ -884,50 +907,28 @@ code {
   transform: translateX(25px);
 }
 
-.modal {
-  width: 200px;
-  height: 200px;
-  background-color: #000;
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease;
+.sticky-button {
+  position: fixed;
+  display: inline-block;
+  bottom: 40%;
+  right: 20px;
+  transform: translateX(50%);
+  z-index: 999;
 }
 
-.modal.active {
-  background-color: #000;
-}
-
-.modal-content {
-  padding: 0px;
-}
-
-.mod-btn {
-  padding: 5px 10px;
-  background-color: #CC3333;
-  color: #fff;
-  border: 1px solid #CC3333;
+.sticky-button button {
+  background-color: #D13131;
+  border: 1px solid #d13131;
   border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-items: center;
+  color: #fff;
+  display: block;
+  padding: 10px 5px;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  white-space: nowrap;
+  font-size: 16px;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -939,6 +940,18 @@ code {
 @media only screen and (min-width: 275px) and (max-width: 1024px) {
   .title {
     display: none;
+  }
+
+  .nav-bg {
+    display: none;
+  }
+
+  .nav-bg1 {
+    padding-left: 40px !important;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #CC3333;
   }
 
   .btn-main {
@@ -1214,7 +1227,6 @@ code {
   .city-box {
     width: 50% !important;
   }
-
 }
 
 
@@ -1224,7 +1236,7 @@ code {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .content {
     position: absolute;
-    top: 38%;
+    top: 28%;
     left: 60%;
     transform: translate(-50%, -25%);
     z-index: 1;
@@ -1259,5 +1271,11 @@ code {
   .card1 {
     width: 100%;
     margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-bg1 {
+    display: none;
   }
 }

@@ -15,6 +15,7 @@ const Emical = () => {
         const emiValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
         setEmi(emiValue.toFixed(2));
       };
+      
 
   return (
     <>

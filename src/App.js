@@ -7,10 +7,12 @@ import Construction from "./components/Construction";
 import Interior from "./components/Interior";
 import BidProject from "./components/BidProject";
 import RentofProperties from "./components/RentofProperties";
-import Signin from "./components/Signin";
+import Login from "./componentc/Login";
+import Signup from "./componentc/Signup";
 import ShopOnline from "./components/ShopOnline";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import ForgotPass from "./componentc/ForgotPass";
 
 const App = () => {
   return(
@@ -24,7 +26,9 @@ const App = () => {
 <Route path="/interior" element={<Interior />} />
 <Route path="/bidproject" element={<BidProject />} />
 <Route path="/rentproprties" element={<RentofProperties />}/>
-<Route path="/signin" element={<Signin />} />
+<Route path="/Signup" element={<Signup />} />
+<Route path="/Login" element={<Login />} />
+<Route path="/ForgotPass" element={<ForgotPass />} />
 <Route path="/shoponline" element={<ShopOnline />} />
 </Routes>
 </BrowserRouter>

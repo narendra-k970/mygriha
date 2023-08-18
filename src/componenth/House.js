@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay,Pagination, Navigation } from "swiper";
-
 import city1 from "../img/MP.png";
 import city2 from "../img/MH.webp";
 import city3 from "../img/Karnataka.png";
