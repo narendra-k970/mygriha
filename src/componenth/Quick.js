@@ -117,28 +117,28 @@ const Quick = () => {
              <div className='col-lg-3 qui-box'>
                 <div className='qui-col1'>
                 <img src={svg1} alt='2dimage' className='des-img1'/>
-                <h4 className='mt-4'>Project Done on time</h4>
+                <h4 className='mt-4 proj-h'>Project Done on time</h4>
                 <button className='re-btn'>Read More</button>
                 </div>
              </div>
              <div className='col-lg-3 qui-box'>
                 <div className='qui-col1'>
                 <img src={svg2} alt='2dimage' className='des-img1'/>
-                <h4 className='mt-4'>Best Price</h4>
+                <h4 className='mt-4 proj-h'>Best Price</h4>
                 <button className='re-btn'>Read More</button>
                 </div>
              </div>
              <div className='col-lg-3 qui-box'>
                 <div className='qui-col1'>
                 <img src={svg3} alt='2dimage' className='des-img1'/>
-                <h4 className='mt-4'>Superior Design</h4>
+                <h4 className='mt-4 proj-h'>Superior Design</h4>
                 <button className='re-btn'>Read More</button>
                 </div>
              </div>
              <div className='col-lg-3 qui-box'>
                 <div className='qui-col1'>
                 <img src={svg4} alt='2dimage' className='des-img1'/>
-                <h4 className='mt-4'>Experenced Team</h4>
+                <h4 className='mt-4 proj-h'>Experenced Team</h4>
                 <button className='re-btn'>Read More</button>
                 </div>
              </div>

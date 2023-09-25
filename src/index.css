@@ -355,18 +355,18 @@ code {
 }
 
 .des-img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .qui-col {
   border: 1px solid #000;
   padding: 50px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .quick-p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .qui-col1 {
@@ -390,6 +390,9 @@ code {
 }
 
 /* Book Now */
+.proj-h {
+  font-size: 20px;
+}
 
 .card1 {
   width: 90%;
@@ -726,7 +729,7 @@ code {
 }
 
 .fot-p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .ft-icon {
@@ -922,9 +925,9 @@ code {
   border-radius: 5px;
   color: #fff;
   display: block;
-  padding: 10px 5px;
+  padding: 10px 15px;
   writing-mode: vertical-rl;
-  transform: rotate(360deg);
+  transform: rotate(90deg);
   white-space: nowrap;
   font-size: 16px;
   cursor: pointer;

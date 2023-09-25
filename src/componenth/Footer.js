@@ -66,7 +66,7 @@ const Footer = () => {
                  </div>
              </div>
              <hr className='f-hr'/>
-             <div className='row ft-row g-2'>
+             <div className='row ft-row g-1'>
                 <div className='col-lg-1'>
 
                 </div>

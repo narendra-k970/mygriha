@@ -13,6 +13,7 @@ import ShopOnline from "./components/ShopOnline";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import ForgotPass from "./componentc/ForgotPass";
+import Profile from "./componentc/Profile"
 
 const App = () => {
   return(
@@ -30,6 +31,7 @@ const App = () => {
 <Route path="/Login" element={<Login />} />
 <Route path="/ForgotPass" element={<ForgotPass />} />
 <Route path="/shoponline" element={<ShopOnline />} />
+<Route path="/profile" element={<Profile />} />
 </Routes>
 </BrowserRouter>
 </>

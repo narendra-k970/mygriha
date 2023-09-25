@@ -31,7 +31,7 @@ const Sidebar = () => {
     <section className='side'>
         <div className='container'>
             <div className='row'>
-                <h6>MENU</h6>
+                <h6 className='mt-3'>MENU</h6>
             <nav className="nav flex-column">
             <NavLink className="nav-link" to="#"><img src={icon1} alt='' className='s-icon'/>
             <span className='title2'>Architecture</span></NavLink>

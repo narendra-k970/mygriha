@@ -1,33 +1,46 @@
-import React, { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
-import "./construction.css"
+import React from 'react';
+import './construction.css';
 
-
-const Sidebar = () => {
-    const [isOpen, setIsOpen] = useState(true);
-      
-    const toggleSidebar = () => {
-      setIsOpen(!isOpen);
+  const Sidebar = ({ collapsed, activeTab, setActiveTab }) => {
+    const handleTabClick = (tabName) => {
+      setActiveTab(tabName);
     };
-         
   return (
-     <>
-         <div className="container">
-      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <button className="toggle-btn" onClick={toggleSidebar}>
-          {isOpen ? <FiX /> : <FiMenu />}
-        </button>
-        <ul className='side-menu'>
-          <li className='side-list'>Profile</li>
-          <li className='side-list'>Logout</li>
-        </ul>
-      </div>
-      <div className={`content ${isOpen ? '' : 'expanded'}`}>
-      <h1>Welcome to your dashboard!</h1>
-      </div>
+    <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+      <ul className="nav">
+      {!collapsed && (
+        <>
+        <li
+          className={activeTab === 'enquiries' ? 'active' : ''}
+          onClick={() => handleTabClick('enquiries')}
+        >
+          Enquiries
+        </li>
+        <li
+          className={activeTab === 'orders' ? 'active' : ''}
+          onClick={() => handleTabClick('orders')}
+        >
+          Orders
+        </li>
+        <li
+          className={activeTab === 'wishlist' ? 'active' : ''}
+          onClick={() => handleTabClick('wishlist')}
+        >
+          Wishlist
+        </li>
+        <li
+          className={activeTab === 'wishlist' ? 'active' : ''}
+          onClick={() => handleTabClick('address')}
+        >
+          Address
+        </li>
+        </>
+       )}
+      </ul>
     </div>
-     </>
   );
 };
 
 export default Sidebar;
+
+
