@@ -1,7 +1,7 @@
 module.exports = {
     HOST: "upnishaddeo",
     PORT: "Hanumanji311998",
-    DB: "test",
+    DB: "mygirah",
     url: "talesgram.wtiwt"
 };
 // module.exports = {
