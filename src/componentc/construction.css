@@ -392,3 +392,76 @@ th {
 img {
     cursor: pointer;
 }
+
+
+/* Cestimate */
+.est-row {
+    text-align: center;
+}
+
+.dropdown {
+    margin-right: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.est-top {
+    margin-top: 50px;
+    background-color: #F3F3F3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mate-img {
+    height: 120px;
+    width: 120px;
+    border: 2px solid #CC3333;
+    margin-top: 5px;
+}
+
+.mate-top {
+    margin-top: 50px;
+}
+
+.mater-img {
+    max-height: 180px;
+    width: auto;
+    align-items: center;
+}
+
+.mat-box {
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.getes-btn {
+    background-color: #CC3333;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #CC3333;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.est-side {
+    border-left: 1px solid #000;
+}
+
+hr.mat-hr {
+    width: 90%;
+    border: 2px solid #CC3333;
+}

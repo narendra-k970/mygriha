@@ -14,6 +14,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import ForgotPass from "./componentc/ForgotPass";
 import Profile from "./componentc/Profile"
+import Cestimate from "./componentc/Cestimate";
 
 const App = () => {
   return(
@@ -32,6 +33,7 @@ const App = () => {
 <Route path="/ForgotPass" element={<ForgotPass />} />
 <Route path="/shoponline" element={<ShopOnline />} />
 <Route path="/profile" element={<Profile />} />
+<Route path="/cestimate" element={<Cestimate />} />
 </Routes>
 </BrowserRouter>
 </>
