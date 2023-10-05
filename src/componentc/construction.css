@@ -158,6 +158,17 @@
     z-index: 2;
 }
 
+.admside {
+    width: 220px;
+    height: 90vh;
+    transition: width 0.3s;
+    background-color: #CC3333;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
 
 .sidebar.collapsed {
     width: 0px !important;

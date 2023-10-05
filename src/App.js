@@ -15,12 +15,14 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import ForgotPass from "./componentc/ForgotPass";
 import Profile from "./componentc/Profile"
 import Cestimate from "./componentc/Cestimate";
+import Admin from "./components/Admin"
+import Dashboard from "./componentc/Dashboard"
+
 
 const App = () => {
   return(
     <>
 <BrowserRouter>
-
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/architecture" element={<Architecture />} />
@@ -34,6 +36,8 @@ const App = () => {
 <Route path="/shoponline" element={<ShopOnline />} />
 <Route path="/profile" element={<Profile />} />
 <Route path="/cestimate" element={<Cestimate />} />
+<Route path="/admin" element={<Admin />} />
+<Route path="/dashboard" element={<Dashboard />} />
 </Routes>
 </BrowserRouter>
 </>

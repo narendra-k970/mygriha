@@ -16,6 +16,10 @@ const Header = ({ collapsed, onToggle}) => {
     setDropdownVisible(!dropdownVisible);
   };
 
+  const closeDropdown = () => {
+    setDropdownVisible(false);
+  };
+
 
   return (
     <header className="header">
@@ -48,6 +52,7 @@ const Header = ({ collapsed, onToggle}) => {
                </ul>
              </div>
              )}
+             {dropdownVisible && <div className="outside-click-listener" onClick={closeDropdown} />}
              </div>
           </div>
          </div>

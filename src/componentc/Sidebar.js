@@ -1,10 +1,11 @@
 import React from 'react';
 import './construction.css';
 
-  const Sidebar = ({ collapsed, activeTab, setActiveTab }) => {
+const Sidebar = ({ collapsed, activeTab, setActiveTab }) => {
     const handleTabClick = (tabName) => {
       setActiveTab(tabName);
     };
+    
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <ul className="nav">
